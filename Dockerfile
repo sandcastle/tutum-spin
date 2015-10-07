@@ -1,6 +1,9 @@
 FROM ubuntu:trusty
 
 ADD run.sh /run.sh
-RUN chmod 755 /*.sh
+ADD other.sh /bin/other
+
+RUN chmod 755 /run.sh && \
+    chmod 755 /bin/other
 
 CMD ["/run.sh"]
