@@ -1,2 +1,3 @@
-trap 'echo SIGNAL!;' INT
-wait
+while true; do
+  read
+done < /dev/stdin
