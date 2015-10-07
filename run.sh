@@ -1,3 +1,5 @@
 while true; do
-  read
-done < /dev/stdin
+  echo "test"
+  sleep 20 &
+  wait $!
+done
