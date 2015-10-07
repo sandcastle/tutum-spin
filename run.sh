@@ -1,3 +1,5 @@
+#!/bin/sh
+
 while true; do
   echo "test"
   sleep 20 &
