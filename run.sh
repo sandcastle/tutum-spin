@@ -1,5 +1,9 @@
 #!/bin/sh
 
+echo "Game time!"
+
 while true; do
-  read
-done < /dev/stdin
+  sleep 3600 &
+  wait $!
+  echo "Still here"
+done
